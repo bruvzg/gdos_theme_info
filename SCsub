@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+Import('env')
+Import('env_modules')
+
+env_gdos_info = env_modules.Clone()
+
+env_gdos_info.Append(CPPPATH=["."])
+env_gdos_info.add_source_files(env.modules_sources, "*.cpp")
+
+if (env["platform"] == "osx"):
+	env_gdos_info.add_source_files(env.modules_sources, "macos/*.mm")
+elif (env["platform"] == "windows"):
+	env_gdos_info.add_source_files(env.modules_sources, "windows/*.cpp")
+else:
+	env_gdos_info.add_source_files(env.modules_sources, "dummy/*.cpp")
