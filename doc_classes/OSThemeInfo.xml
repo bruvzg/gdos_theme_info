@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="OSThemeInfo" inherits="Object" category="Core" version="3.2">
+	<brief_description>
+	</brief_description>
+	<description>
+		OS theme info. Supports macOS and Windows 10.
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_accent_color" qualifiers="const">
+			<return type="Color">
+			</return>
+			<description>
+				Returns OS theme accent color.
+			</description>
+		</method>
+		<method name="is_dark_mode" qualifiers="const">
+			<return type="bool">
+			</return>
+			<description>
+				Returns [code]true[/code] if OS is in dark mode.
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>
