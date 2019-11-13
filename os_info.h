@@ -7,6 +7,8 @@
 
 #include "core/map.h"
 #include "core/object.h"
+#include "core/reference.h"
+#include "core/image.h"
 
 class OSThemeInfo : public Object {
 
@@ -22,6 +24,7 @@ public:
 
 	virtual bool is_dark_mode() const;
 	virtual Color get_accent_color() const;
+	virtual Color get_background_color() const;
 
 	OSThemeInfo();
 	~OSThemeInfo();

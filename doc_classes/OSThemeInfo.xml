@@ -15,6 +15,13 @@
 				Returns OS theme accent color.
 			</description>
 		</method>
+		<method name="get_background_color" qualifiers="const">
+			<return type="Color">
+			</return>
+			<description>
+				Returns OS theme background color.
+			</description>
+		</method>
 		<method name="is_dark_mode" qualifiers="const">
 			<return type="bool">
 			</return>
