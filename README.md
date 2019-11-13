@@ -6,3 +6,4 @@ Supports macOS and Windows 10.
 
 - `bool OSThemeInfo.is_dark_mode()`, return `true` if OS is in dark mode.
 - `Color OSThemeInfo.get_accent_color()`, returns OS theme accent color.
+- `Color OSThemeInfo.get_background_color()`, returns OS theme background color.
